@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Calificaciones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #f7d669;
+            text-align: center;
+            padding: 0;
+            border-bottom: 3px solid #004d00;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+        }
+
+        nav {
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .title {
+            background-color: #f7d669;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            margin-bottom: 30px;
+            line-height: 1.8;
+            color: #000;
+        }
+
+        .info span {
+            font-weight: bold;
+        }
+
+        .lili {
+            color: #004d00;
+        }
+
+        select {
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #004d00;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        td {
+            text-align: center;
+            padding: 8px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-top: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .footer table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        .footer table, .footer th, .footer td {
+            border: 1px solid #ccc;
+        }
+
+        .footer th {
+            background-color: #004d00;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .footer td {
+            padding: 10px;
+        }
+
+        .footer-address {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            header img {
+                height: auto;
+            }
+
+            nav {
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                margin: 5px 10px;
+            }
+
+            .content {
+                padding: 10px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="banner.jpg" alt="Banner Principal">
+    </header>
+    <p>Portal Digital de Atención Integral a Estudiantes de la UTHH</p>
+    <nav>
+        <a href="#">Cerrar sesión</a>
+        <a href="#">Datos de usuario</a>
+        <a href="#">Consultar mis calificaciones</a>
+        <a href="#">Entrevista inicial</a>
+        <a href="#">Pagos</a>
+        <a href="#">Agenda</a>
+    </nav>
+
+    <div class="content">
+        <div class="title">Consulta de Calificaciones</div>
+
+        <div class="info">
+            <p class="lili"><span>ALUMNO:</span>PEDRO RUBIO ANGELES</p>
+            <p class="lili"><span>CARRERA:</span> TÉCNICO SUPERIOR UNIVERSITARIO EN TECNOLOGÍAS DE LA INFORMACIÓN</p>
+            <p class="lili"><span>CUATRIMESTRE:</span> <select><option>5to. CUATRIMESTRE</option> <option>2do. CUATRIMESTRE</option></select></p>
+            <p class="lili"><span>GRUPO:</span> C</p>
+            <p class="lili"><span>PERIODO:</span> 20243</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre de la materia</th>
+                    <th>M1</th>
+                    <th>M2</th>
+                    <th>M3</th>
+                    <th>Promedio Final</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ESTÁNDARES Y MÉTRICAS PARA EL DESARROLLO DE SOFTWARE</td>
+                    <td>9</td>
+                    <td>Or</td>
+                    <td>8</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>CALCULO INTEGRAL</td>
+                    <td>9</td>
+                    <td>Or</td>
+                    <td>8</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>BASE DE DATOS</td>
+                    <td>9</td>
+                    <td>Or</td>
+                    <td>8</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>APLICACIONES DE IOT</td>
+                    <td>9</td>
+                    <td>Or</td>
+                    <td>8</td>
+                    <td>8</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer">
+            <button>Imprimir boleta</button>
+            <button>Imprimir historial</button>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>SIGNIFICADO DE LAS ABREVIATURAS DE LA TABLA DE CALIFICACIONES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Or: La calificación se obtuvo en el parcial ordinario</td>
+                    </tr>
+                    <tr>
+                        <td>E1: La calificación se obtuvo en periodo extraordinario vuelta 1</td>
+                    </tr>
+                    <tr>
+                        <td>E2: La calificación se obtuvo en periodo extraordinario vuelta 2</td>
+                    </tr>
+                    <tr>
+                        <td>E3: La calificación se obtuvo en periodo extraordinario vuelta 3</td>
+                    </tr>
+                    <tr>
+                        <td>NA: No acreditado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer-address">
+            Carretera Huejutla - Chalhuixyapa S/N, C.P. 43000, Huejutla de Reyes, Hidalgo.<br>
+            Teléfonos: 789 8962088 al 91<br>
+            E-mail: rectoria@uthh.edu.mx<br>
+            Universidad Tecnológica de la Huasteca Hidalguense
+        </div>
+    </div>
+</body>
+</html>
